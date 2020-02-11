@@ -1,0 +1,42 @@
+<skeleton selector="skeleton"
+loading="spin"
+bgcolor="#FFF"
+wx:if="{{false}}"></skeleton>
+
+<view class="skeleton">
+<Swiper class="banner skeleton-bg" bind:displayDot="changeDot">
+  <view class="to-over skeleton-rect">
+    <view class="pagination skeleton-rect">{{swiperActiveI}}/{{lunbo_info.length}}</view>
+    <view class="to-over-foot">
+      <view class="over-foot-left skeleton-rect">
+        <i class="iconfont iconclock"/>{{timeDownTittle}}
+        <view>
+          <text class="end-of-distance"> 倒计时 {{countTime.day}}天 </text>
+          {{countTime.hour}}:{{countTime.min}}:{{countTime.sec}}
+        </view>
+        
+      </view>
+      <view class="over-foot-right skeleton-rect">
+        <view class="foot-right-video {{swiperLook==0?'foot-right-item':''}}" bindtap="changeSwiper" data-i="0">
+          <i class="iconfont iconsanjiaoxing"/>视频
+        </view>
+        <view class="foot-right-pic {{swiperLook==1?'foot-right-item':''}}" bindtap="changeSwiper" data-i="1">图片</view>
+      </view>
+    </view>
+  </view>
+</Swiper>
+
+<Content class="" goods_info="{{goods_info}}" auction_info="{{auction_info}}"></Content>
+
+<GoodDetImg class="good-det-img skeleton-bg" article_result="{{goods_info.description}}"></GoodDetImg>
+
+<view class="fix-right skeleton-rect">
+  <view class="fix-right-ball" bindtap="goTop" wx:if="{{isToTopShow}}">
+    <view class="fix-right-top"> <i class="iconfont iconzhiding"/> </view>
+    <view class="fix-right-bottom">顶部</view>
+  </view>
+</view>
+
+
+<FootBuy  class="skeleton-rect" directBuy="{{parseFloat(goods_info.price).toFixed(1)}}" inPrice="{{parseFloat(auction_info.min_price).toFixed(1)}}"></FootBuy>
+</view>

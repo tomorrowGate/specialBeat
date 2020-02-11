@@ -1,0 +1,25 @@
+.pagetitle{
+  /* height: 76rpx; */
+  line-height: 76rpx;
+  padding:16rpx;
+  font-size: 37rpx;
+  font-weight: bold;
+}
+.sendtime{
+  height: 49rpx;
+  line-height: 49rpx;
+  padding:0 16rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.pagecontent{
+  
+}
+.pagecontent .p{
+  display: block;
+  font-size: 34rpx;
+}
+.alin{
+width: 100%;
+text-align: center
+}

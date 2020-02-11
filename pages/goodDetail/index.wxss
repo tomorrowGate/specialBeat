@@ -1,0 +1,86 @@
+page{
+  padding-bottom:140rpx;
+}
+.banner{
+  position: relative;
+  height: auto;
+}
+.to-over{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10rpx 20rpx;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  box-sizing: border-box;
+  z-index:6
+}
+.to-over .pagination{
+  position: absolute;
+  bottom: 120rpx;
+  right:80rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0rpx 24rpx;
+  border-radius: 20rpx;
+  background: rgba(0,0,0,0.4);
+  color:#fff;
+  font-size: 26rpx;
+}
+.to-over-foot{
+  display: flex;
+  box-sizing: border-box
+}
+.over-foot-left{
+  width: 65%;
+}
+.over-foot-right{
+  display: flex;
+  width: 35%;
+  align-items: center
+}
+.end-of-distance{
+  letter-spacing: 2rpx;
+}
+.foot-right-video,.foot-right-pic{
+  padding: 1rpx 20rpx;
+  border-radius: 22rpx;
+  margin-left: 10rpx;
+  background: #000;
+  font-size: 26rpx;
+}
+.foot-right-item{
+  background: #dddcd0;
+  color: #000;
+}
+.iconclock{
+  font-size: 36rpx;
+  margin-right: 10rpx
+}
+.iconsanjiaoxing{
+  font-size: 24rpx;
+  margin-right: 4rpx;
+}
+
+
+.fix-right{
+  position: fixed;
+  right: 20rpx;
+  bottom: 160rpx;
+}
+.fix-right-ball{
+  width: 80rpx;
+  height: 80rpx;
+  padding: 10rpx;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10rpx
+}
+.fix-right-ball .iconfont{
+  font-size: 40rpx;
+}
+.fix-right-bottom{
+  font-size: 26rpx;
+}

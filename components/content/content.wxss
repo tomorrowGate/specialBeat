@@ -1,0 +1,103 @@
+@import "/app.wxss";
+.content-out{
+  padding: 30rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+.content-out-list{
+  padding:30rpx 0rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+.font-upper{
+  font-size: 32rpx
+}
+.font-little{
+  font-size: 26rpx;
+}
+.content-head{
+  display: flex;
+  position: relative
+}
+.font-share{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 30rpx;
+  justify-content: center
+}
+.content-title{
+  width: 100%;
+  height: 100%;
+ /*  border-right: 1rpx solid #b7b7b7 */
+}
+.T-give{
+  padding: 1rpx 16rpx;
+  background: #000;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 16rpx;
+  margin-left: 20rpx;
+}
+.content-share{
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  color: #5e5e5e;
+}
+.content-text-align{
+  text-align: center
+}
+.content-right-align{
+  text-align: right
+}
+.price-now{
+  font-size: 36rpx;
+  color: #fe0000;
+  margin-right: 10rpx;
+}
+.price-normal{
+  color: #fe0000;
+}
+.price-del{
+  text-decoration: line-through;
+  color: #666;
+  font-size: 26rpx
+}
+
+.in-rightnow{
+  width: auto;
+  padding: 0 16rpx;
+  border-radius: 16rpx;
+  color: #fff;
+  background: #cfbd97
+}
+.content-block{
+  border-top:20rpx solid #eee;
+}
+.icongouxuan{
+  font-size: 26rpx;
+  margin-right: 10rpx;
+  color: #cebd96;
+}
+.iconpaimai{
+  color: #8d001c;
+  font-size: 50rpx;
+  margin-right: 10rpx
+}
+.content-numchange{
+  display: flex;
+  align-items: center;
+}
+.content-numchange-btn{
+  padding: 2rpx 20rpx;
+  background: #ccc;
+  margin: 10rpx;
+}
+.margin-text{
+  margin:0 10rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}

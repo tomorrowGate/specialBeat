@@ -1,0 +1,33 @@
+@import "/app.wxss";
+/* 第一个轮播图 */
+.banner-view{
+  position: relative;
+  padding-top:10rpx;
+  width: 750rpx;
+  height:420rpx;
+  background: #fff;
+}
+/* 第一个轮播图 */
+.swiper{
+  position: relative;
+  overflow: hidden;
+  width: 750rpx;
+  height:420rpx;
+  margin: auto;
+  z-index: 5
+}
+.swiper-item image{
+  width: 750rpx;
+  height:420rpx;
+} 
+.shadow-box{ 
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left:22rpx;
+  width: 708rpx;
+  height:427rpx;
+  border-radius: 10rpx;
+  box-shadow: 1rpx 0 2rpx #aaa;
+  z-index: 1;
+}

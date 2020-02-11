@@ -1,0 +1,35 @@
+<view class="select-title font-big">精选商品</view>
+
+
+<scroll-view scroll-x="{{true}}" class="scroll" enable-flex="{{true}}">
+    
+        <view class="tab-select-item" wx:for="{{selected_result}}" wx:key="index" bindtap="showDown">
+            <view class="select-item-imgbox"> 
+              <view class="select-bdg" wx:if="{{item.states_num == 3}}">该商品已结束</view>
+              <!-- <view class="select-bdg" wx:if="{{item.states_num != 3}}">{{item.end_time}}</view> -->
+              <view class="select-bdg" wx:if="{{item.states_num != 3}}">
+                  <text class="end-of-distance"> 倒计时 {{item.countTime.day}}天 </text>
+          {{item.countTime.hour}}:{{item.countTime.min}}:{{item.countTime.sec}}
+              </view>
+               
+              <image class="" src="{{item.default_image?item.default_image:defaultImg}}"></image>
+            </view>
+            <view class="select-item-texts">
+              <view class="select-item-p">{{item.goods_name}}</view>
+              <view class="select-item-explain font-little">{{item.extension_content}}</view>
+              <view  wx:if="{{item.states_num == 3}}">
+                  <view wx:if="{{item.is_liupai==1}}">
+                      <view class="select-item-red">现价:￥{{item.start_price}}</view>
+                      <view class="price-del">￥{{item.oprice}}</view>
+                  </view>
+                  <view wx:if="{{item.is_liupai!=1}}">
+                      <view class="select-item-red">现价:￥{{item.current_price}}</view> 
+                       <view class="price-del">￥{{item.oprice}}</view>
+                  </view>
+              </view>
+              <view class="select-item-red" wx:if="{{item.states_num != 3}}">￥{{item.oprice}}</view>
+            </view>
+        </view>
+    
+
+</scroll-view>

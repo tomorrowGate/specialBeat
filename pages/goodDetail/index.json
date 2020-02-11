@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "Swiper": "/components/swiper/swiper",
+    "Content": "/components/content/content",
+    "GoodDetImg":"/components/goodDetImg/index",
+    "FootBuy": "/components/footBuy/index",
+    "skeleton": "/components/skeleton/skeleton"
+  }
+  
+}

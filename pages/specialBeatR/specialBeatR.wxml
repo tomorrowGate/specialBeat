@@ -1,0 +1,68 @@
+<!-- 拆红包后 -->
+<skeleton selector="skeleton"
+loading="spin"
+bgcolor="#FFF"
+wx:if="{{showSkeleton}}"></skeleton>
+
+
+<view class="sbBg skeleton">
+  <view class="strategy skeleton-rect" bindtap="goBack">奖励规则</view>
+  <!-- 图片头部 -->
+  <view class="sbImg skeleton-bg">
+    <image src="/src/img/specialBeatInvite.png"></image>
+  </view>
+
+  
+  <!-- 领取金额区域 -->
+  <view class="redBg skeleton-bg">
+    <view class="redText skeleton-rect">
+      <view class="redLabel">手气上佳!</view>
+      <view class="redLogo">￥<text  class="redNub">{{redPackge.my_get_money||0}}</text>
+      </view>
+    </view>
+    <!-- <button 
+    class="redBtn"
+    open-type="launchApp" 
+    app-parameter="wechat" 
+    binderror="launchAppError">前往APP</button> -->
+    <view class="redBtn skeleton-rect" bindtap="toDownApp">前往APP</view>
+  </view>
+  <!-- 晒红包区 -->
+  <view class="redTips">前往APP参与分享可获得更多收益哦~</view>
+  <view class="redRegion">
+    <view class="redNav">晒红包</view>
+
+    <!-- <view class="redItem" wx:for="{{redPackge.get_log}}" wx:key="index">
+      <view class="redHead skeleton-radius"> <image class="portrait skeleton-radius" src="{{appurl+item.portrait}}"></image> </view>
+      <view class="redData">
+        <view>{{item.real_name}}的待拆红包</view>
+        <view class="redHelp">帮助好友拆红包也可以领到现金哦</view>
+      </view>
+      <view>我已领到{{item.money}}元</view>
+    </view> -->
+
+ 
+<swiper 
+    autoplay="{{true}}"
+    duration="{{300}}"
+    circular="{{true}}"
+    vertical="{{true}}"
+    display-multiple-items="{{3}}"
+    class="swiper">
+    <block wx:for="{{redPackge.get_log}}" wx:key="index" >
+      <swiper-item class=" swiper-item">
+        <view class="redItem">
+        <view class="redHead"> <image class="portrait" src="{{item.portraitURL}}"></image> </view>
+        <view class="redData">
+          <view>{{item.real_name}}的待拆红包</view>
+          <view class="redHelp">帮助好友拆红包也可以领到现金哦</view>
+        </view>
+        <view>我已领到{{item.money}}元</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  </view>
+</view>
+

@@ -1,0 +1,28 @@
+<!-- 拆红包前 -->
+<skeleton selector="skeleton"
+loading="spin"
+bgcolor="#FFF"
+wx:if="{{showSkeleton}}"></skeleton>
+
+
+<view class="prize skeleton ">
+<!-- 头部图片 -->
+  <view class="prizeImg  skeleton-bg" >
+    <image src="/src/img/specialBeatR.png"/>
+  </view>
+  <!-- 红包区域 -->
+  <view class="prizeBg skeleton-rect" >
+    <view class="prizeLogo skeleton-rect">￥
+      <text class="prizeNub">{{redPackge.current_amount||0}}</text>
+    </view>
+    <view class="prizeText skeleton-rect">红包总额度</view>
+
+    <view class="prizeSpeed">
+      <!-- <progress percent="80" border-radius="30rpx" activeColor="#ffeca7" stroke-width="4"/> -->
+    </view>
+    <view class="prizeHead skeleton-radius" bindtap="goPrizeHead">
+      <image class="portrait skeleton-radius" src="{{portrait}}" bindload="imageLoad"></image>
+    </view>
+    <view class="dismantle" bindtap="goPrizeHead">拆红包</view>
+  </view>
+</view>

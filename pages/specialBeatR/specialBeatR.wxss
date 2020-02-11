@@ -1,0 +1,128 @@
+page{
+  height: 100%;
+}
+/* 头部图片 */
+.sbBg {
+  height: 100%;
+  width: 100%;
+  background-image: url(http://tepai.yunqigas.net/data/files/bg.png) ;
+  background-size: cover;
+  
+  }
+.strategy {
+  position: absolute;
+  width: 140rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(250, 250, 250, 0.3);
+  border-radius: 30rpx 0 0 30rpx;
+  font-size: 28rpx;
+  right: 0;
+  padding-left: 15rpx;
+  margin-top: 120rpx;
+  
+}
+
+.sbImg image{
+  height: 80rpx;
+  width: 68%;
+  background-size: 100% 100%;
+  margin: 200rpx 16% 0 16%;
+}
+.cumulative {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+}
+/* 领取金额区域 */
+.redBg{
+  width: 78%;
+  height: 320rpx;
+  margin: 40rpx auto;
+  background-image: url(http://tepai.yunqigas.net/data/files/redEvolp.png);
+  background-size: 100% 100%;
+  
+}
+.redText {
+  font-size: 30rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30rpx;
+  line-height: 65rpx;
+}
+.redLabel{
+  color: #ffa152;
+}
+.redLogo{
+  font-size: 40rpx;
+  color: #f00;
+  font-weight: bold;
+}
+.redNub {
+  font-size: 70rpx;
+  color: #f00;
+  font-weight: bold;
+}
+
+.redBtn {
+  font-size: 34rpx;
+  color: #f00;
+  text-align: center;
+  margin-top: 80rpx;
+}
+/* 晒红包区 */
+.redTips{
+  color: #ffeca7;
+  text-align: center;
+  line-height: 55rpx;
+}
+.redRegion {
+  background: rgb(250, 250, 250, .3);
+  color: #ffeca7;
+  margin: 30rpx 12rpx;
+  border-radius: 8rpx;
+}
+.redNav{
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-bottom: 1px solid rgb(250, 250, 250, .1);
+  letter-spacing: 4rpx;
+  /* font-weight: bold; */
+}
+
+.redItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  padding: 15rpx 20rpx;
+  line-height: 38rpx;
+  margin-top: 20rpx;
+   border-bottom: 1px solid rgb(250, 250, 250, .1);
+}
+.redHead{
+  height: 72rpx;
+  width: 72rpx;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-top: -15rpx;
+  background: #ddd;
+}
+.redData{
+  margin-left: -8rpx;
+}
+.redHelp{
+  font-size: 25rpx;
+}
+.redHead .portrait{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.swiper{
+  height: 360rpx;
+}

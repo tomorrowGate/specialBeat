@@ -1,0 +1,34 @@
+<!--find/components/swiper.wxml-->
+<view class="banner-view">
+ <swiper 
+    indicator-dots="{{swiperStatic.indicatorDots}}"
+    indicator-color = "{{swiperStatic.indicatorColor}}"
+    indicator-active-color = "{{swiperStatic.indicatorActiveColor}}"
+    autoplay="{{swiperStatic.autoplay}}" 
+    interval="{{swiperStatic.interval}}" 
+    duration="{{swiperStatic.duration}}"
+    circular="{{swiperStatic.circular}}"
+    bindchange="displayDot"
+    
+    class="swiper">
+    <block wx:for="{{lunbo_info}}" wx:key="index" >
+      <swiper-item class="swiper-item">
+          <image 
+            wx-if="{{item.file_path}}"
+            src="{{appurl+item.file_path}}"
+            class="slide-image"
+            mode="aspectFill" />
+
+          <image 
+          wx-if="{{item.image_url}}"
+          src="{{appurl+item.image_url}}"
+          class="slide-image"
+          mode="aspectFill" />
+      
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- <view class="shadow-box"></view> -->
+
+</view>
+<slot></slot>

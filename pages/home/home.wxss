@@ -1,0 +1,7 @@
+.good-card{
+  padding: 60rpx;
+}
+.banner{
+  position: relative;
+  height: auto;
+}

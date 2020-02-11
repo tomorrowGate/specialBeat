@@ -1,0 +1,19 @@
+<wux-row wux-class="footbuy-bottom" wx:if="{{!isNormalGood}}">
+    <wux-col span="6" wux-class="footbuy-dir" bindtap="toDownApp">
+        <view class="font-up">直接购买</view>
+        <view class="font-little">￥{{directBuy}}</view>
+    </wux-col>
+    <wux-col span="6" wux-class="footbuy-in" bindtap="toDownApp">
+        <view class="font-up">进入排场</view>
+        <view class="font-little">加价幅度￥{{inPrice}}/次</view>
+    </wux-col>
+</wux-row>
+
+<wux-row wux-class="footbuy-bottom"  wx:if="{{isNormalGood}}">
+    <wux-col span="6" wux-class="footbuy-dir" bindtap="toDownApp">
+        <view class="font-up">加入购物车</view>
+    </wux-col>
+    <wux-col span="6" wux-class="footbuy-in" bindtap="toDownApp">
+        <view class="font-up">立即购买</view>
+    </wux-col>
+</wux-row>

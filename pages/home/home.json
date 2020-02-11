@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "skeleton":"/components/skeleton/skeleton",
+    "Swiper": "/components/swiper/swiper",
+    "Goodcard": "/components/goodCard/index",
+    "BallList":"/components/ballList/index",
+    "SelectedResult":"/components/selectedResult/index"
+  }
+}

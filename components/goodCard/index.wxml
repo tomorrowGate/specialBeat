@@ -1,0 +1,47 @@
+
+<view class="recoment-title  font-big">好物推荐</view>
+<wux-row 
+wux-class="content-out " 
+wx:for="{{recommend_result}}"
+wx:key="index" 
+bindtap="showDown"
+data-goodId="{{item.goods_id}}">
+   <wux-col span="4">
+        <view class="home-imgbox">
+              <view class="select-bdg" wx:if="{{item.states_num == 3}}">该商品已结束</view>
+              <view class="select-bdg" wx:if="{{item.states_num != 3}}">{{item.end_time}}</view>
+            <image 
+            class="" src="{{item.default_image?item.default_image:defaultImg}}"></image>
+        </view>
+    </wux-col>
+    <wux-col span="7" wux-class="marginRight">
+      <view class="price-out">
+          <view class="font-big">{{item.goods_name}}</view>
+          <view class="price-normal">{{item.extension_content}}</view>
+
+ <view  wx:if="{{item.states_num == 3}}">
+                  <view wx:if="{{item.is_liupai==1}}">
+                      <text class="price-now">现价：￥{{item.start_price}}</text>
+                      <view class="price-del">￥{{item.oprice}}</view>
+                  </view>
+                  <view wx:if="{{item.is_liupai!=1}}">
+                      <view class="select-item-red font-big">
+                          <text class="price-now">现价：￥{{item.current_price}}</text> 
+                          <view class="price-del">￥{{item.oprice}}</view> 
+                      </view>
+                  </view>
+              </view>
+
+              <view 
+              class="price-now" 
+              wx:if="{{item.states_num != 3}}"
+              >￥{{item.oprice}}</view>
+
+          <view class="price-bottom price-normal">
+            <!-- <view class="">{{843}}人围观</view> -->
+            <view class="price-buy">立即购买</view>
+          </view> 
+      </view>
+        
+    </wux-col>
+</wux-row>

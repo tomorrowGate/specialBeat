@@ -1,0 +1,21 @@
+.footbuy-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.footbuy-dir{
+  padding: 20rpx 0;
+  background: #333;
+}
+.footbuy-in{
+  padding: 20rpx 0;
+  background: #c30010;
+}
+.font-up{
+  font-size: 1.1em;
+}
+.font-little{
+  font-size: 0.9em;
+}

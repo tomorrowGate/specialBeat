@@ -1,0 +1,182 @@
+<view wx:if="{{!isNormalGood}}">
+  <view class="content-out content-head">
+      <view span="12" class="content-title">
+          <view class="font-upper">
+            {{goods_info.goods_name}}
+            <text class="T-give">送T豆</text>
+          </view>
+      </view>
+      <!-- <view span="3" class="content-share">
+          <view class="font-share"><i class="iconfont iconArtboard"/>分享</view>
+      </view> -->
+  </view>
+  <wux-row wux-class="content-out ">
+    <wux-col span="9">
+          <view class="placeholder">
+            <text class="price-normal">当前价</text>
+            <text class="price-normal">￥</text>
+            <text class="price-now">{{ auction_info.current_price}}</text>
+            <text class="price-del">￥</text> 
+            <text class="price-del">{{goods_info.oprice}}</text> 
+          </view>
+      </wux-col>
+      <wux-col span="3">
+          <view class=" content-text-align">{{auction_info.watch_num}}围观</view>
+      </wux-col>
+  </wux-row>
+  <wux-row wux-class=" content-out-list content-text-align">
+      <wux-col span="3">
+          <view class="placeholder">起拍价</view>
+          <view class="font-little">￥{{auction_info.start_price}}</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="placeholder">保证金</view>
+          <view class="font-little">￥{{auction_info.deposit}}</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="placeholder">封顶价</view>
+          <view class="font-little font-little">￥{{auction_info.capped_price}}</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="placeholder">加价幅度</view>
+          <view class="price-normal">￥{{auction_info.min_price}}</view>
+      </wux-col>
+  </wux-row>
+  <wux-row wux-class="content-out">
+      <wux-col span="11">
+          <view class="placeholder">出价记录</view>
+      </wux-col>
+      <wux-col span="1">
+          <view class="content-right-align "><i class="iconfont iconarrow-sl"/></view>
+      </wux-col>
+  </wux-row>
+  <wux-row wux-class="content-out-list">
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/> 源头好货</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/>正品保证</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/>安全保障</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/>极速发货</view>
+      </wux-col>
+  </wux-row>
+
+
+ <!--  <wux-row wux-class="content-out content-block">
+      <wux-col span="9">
+          <view class="placeholder">{{auction_info.total_field}}场</view>
+      </wux-col>
+      <wux-col span="3" wux-class="content-right-align">
+          <text class="in-rightnow ">立即参与</text>
+      </wux-col>
+  </wux-row> -->
+
+
+  <wux-row wux-class="content-out content-block">
+      <wux-col span="11">
+          <view class="placeholder">特拍规则</view>
+      </wux-col>
+      <wux-col span="1">
+          <view class="content-right-align"><i class="iconfont iconarrow-sl"/></view>
+      </wux-col>
+  </wux-row>
+  <wux-row wux-class="content-out">
+      <wux-col span="11">
+          <view class="placeholder"><i class="iconfont iconpaimai"/>一锤定音国际拍卖</view>
+      </wux-col>
+      <wux-col span="1">
+          <view class="content-right-align"><i class="iconfont iconarrow-sl"/></view>
+      </wux-col>
+  </wux-row>
+</view>
+
+
+
+<view wx:if="{{isNormalGood}}">
+  <view class="content-out content-head">
+      <view span="12" class="content-title">
+          <view class="font-upper">
+            {{goods_info.goods_name}}
+            <text class="T-give">送T豆</text>
+          </view>
+      </view>
+  </view>
+  <wux-row wux-class="content-out ">
+    <wux-col span="9">
+          <view class="placeholder">
+            <text class="price-normal">当前价</text>
+            <text class="price-normal">￥</text>
+            <text class="price-now">{{goods_info.price}}</text>
+            <text class="price-del">￥</text> 
+            <text class="price-del">{{goods_info.oprice}}</text> 
+          </view>
+      </wux-col>
+      <!-- <wux-col span="3">
+          <view class=" content-text-align">{{goods_info.watch_num}}围观</view>
+      </wux-col> -->
+  </wux-row>
+  
+  <wux-row wux-class="content-out">
+      <wux-col span="11">
+          <view class="placeholder">
+              <text>快递</text> 
+              <text class="margin-text">免运费</text> 
+              <text>库存</text> 
+              <text class="margin-text">{{goods_info.stock}}</text>
+              <text>已售</text> 
+              <text class="margin-text">0</text>  
+          </view>
+      </wux-col>
+      
+  </wux-row>
+  <wux-row wux-class="content-out-list">
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/> 源头好货</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/>正品保证</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/>安全保障</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="content-text-align"><i class="iconfont icongouxuan"/>极速发货</view>
+      </wux-col>
+  </wux-row>
+
+
+  <wux-row wux-class="content-out content-block">
+      <wux-col span="9">
+          <view class="placeholder">{{goods_info.total_field}}场</view>
+      </wux-col>
+      <wux-col span="3" wux-class="content-right-align" bindtap ="showDown" >
+          <text class="in-rightnow ">立即参与</text>
+      </wux-col>
+  </wux-row>
+
+
+  <wux-row wux-class="content-out content-block">
+      <wux-col span="9">
+          <view class="placeholder">数量</view>
+      </wux-col>
+      <wux-col span="3">
+          <view class="content-right-align content-numchange">
+              <view class="content-numchange-btn" bindtap="addShopNum">+</view>
+              <view>{{shopNum}}</view>
+              <view class="content-numchange-btn" bindtap="decShopNum">-</view>
+          </view>
+      </wux-col>
+  </wux-row>
+  <!-- <wux-row wux-class="content-out">
+      <wux-col span="11">
+          <view class="placeholder"><i class="iconfont iconpaimai"/>一锤定音国际拍卖</view>
+      </wux-col>
+      <wux-col span="1">
+          <view class="content-right-align"><i class="iconfont iconarrow-sl"/></view>
+      </wux-col>
+  </wux-row> -->
+</view>

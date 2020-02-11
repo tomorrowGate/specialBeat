@@ -1,0 +1,47 @@
+<wux-grids  col="4"  bordered="{{ false }}">
+    <wux-grid 
+    bindtap="showDown"
+    thumb="{{appurl+item.img}}" 
+    label="{{item.special_name}}" 
+    wx:for="{{ballList}}" 
+    wx:key="index"/>
+</wux-grids>
+
+<!-- <wux-grids v-if="{{false}}">
+    <wux-grid>
+        <view> <i class="iconfont iconhuangguan-copy"/> </view>
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <view> <i class="iconfont iconhuangguan-copy"/> </view>
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <view> <i class="iconfont iconhuangguan-copy"/> </view>
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <view> <i class="iconfont iconhuangguan-copy"/> </view>
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <view> <i class="iconfont iconhuangguan-copy"/> </view>
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <view> <i class="iconfont iconhuangguan-copy"/> </view>
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <view> <i class="iconfont iconhuangguan-copy"/> </view>
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <wux-icon type="logo-github" />
+        <view>Wux Weapp</view>
+    </wux-grid>
+    <wux-grid>
+        <wux-icon type="logo-github" />
+        <view>Wux Weapp</view>
+    </wux-grid>
+</wux-grids> -->

@@ -1,0 +1,16 @@
+<skeleton selector="skeleton"
+loading="spin"
+bgcolor="#FFF"
+wx:if="{{showSkeleton}}"></skeleton>
+
+<view class="skeleton">
+
+<Swiper class="banner skeleton-bg" isNormal="{{true}}" lunbo_info="{{lunbo_info}}">
+</Swiper>
+
+<!-- <BallList ballList="{{ballList}}"/> -->
+<!-- <SelectedResult selected_result="{{selected_result}}"/> -->
+
+<Goodcard class="good-card skeleton-bg" recommend_result="{{recommend_result}}"></Goodcard>
+
+</view>

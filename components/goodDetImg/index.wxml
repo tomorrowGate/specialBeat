@@ -1,0 +1,7 @@
+<!--components/goodDetImg/index.wxml-->
+<view>
+  <view class="pagecontent">
+  <view class="alin">————————商品详情————————</view>
+      <rich-text nodes="{{article_result}}" class="p"></rich-text>
+  </view>
+</view>
